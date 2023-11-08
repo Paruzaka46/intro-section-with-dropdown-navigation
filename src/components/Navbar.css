@@ -130,7 +130,7 @@ nav .right-part button:hover {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.401);
     width: 100%;
-    height: 100%;
+    height: 150vh;
     display: flex;
     justify-content: end;
     top: 0;

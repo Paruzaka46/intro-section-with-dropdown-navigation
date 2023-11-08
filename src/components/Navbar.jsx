@@ -28,7 +28,7 @@ const NavbarDesktop = () => {
                     </ul>
                 </div>
                 <div className="company-section">
-                    <a onClick={() => setCompany(!company)} href="#">Company <span><img src="/images/icon-arrow-down.svg"/></span></a>
+                    <a onClick={() => setCompany(!company)} href="#">Company <span><img src={company?"/images/icon-arrow-up.svg":"/images/icon-arrow-down.svg"}/></span></a>
                     <ul className={company ? "showCompany" : null}>
                         <li><a>History</a></li>
                         <li><a>Our Team</a></li>
@@ -80,7 +80,7 @@ const NavbarMobile = () => {
                         </ul>
                     </div>
                     <div className="company-section">
-                        <a onClick={() => setCompany(!company)} href="#">Company <span><img src="/images/icon-arrow-down.svg"/></span></a>
+                        <a onClick={() => setCompany(!company)} href="#">Company <span><img src={company?"/images/icon-arrow-up.svg":"/images/icon-arrow-down.svg"}/></span></a>
                         <ul className={company ? "showCompany" : null}>
                             <li><a>History</a></li>
                             <li><a>Our Team</a></li>
